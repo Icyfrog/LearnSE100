@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My ruaruaura Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body bgcolor ="#d0d0d0">
+  <div id="aspp">
+    {{ message }}
+  </div>
+  <div id="app-2">
+      <span v-bind:title = "mssss">
+        鼠标移过来
+      </span>
+  </div>
+  <p>
+      <h1>
+          <div id="app-3">
+              <p v-if="seen">now you see me</p>
+          </div>
+      </h1>
+  </p>
+
+  <script type="text/javascript">
+	import TemplateNav from './TemplateNav'
+ 
+	export default {
+		name: 'FooterNav',
+		components: {
+			'TemplateNav': TemplateNav
+        },
+        //使用相对路径会找不到图片  ../img/logo.jpg
+        data() {
+	return {
+		shouye:'url(' + require('../img/logo.jpg') + ')',
+		fenlei:'url(' + require('../img/logo.jpg') + ')',
+		search:'url(' + require('../img/logo.jpg') + ')',
+		shopcart:'url(' + require('../img/logo.jpg') + ')',
+		mine:'url(' + require('../img/logo.jpg') + ')'
+	}
+},
+
+		props: {
+			num: {
+				default: '0'
+			}
+		},
+	}
+</script>
+
+  <div id ="app-2117">
+      <p>{{message}}</p>
+      <input v-model="messageageage">
+  </div>
+
+
+  <div id="app-2114">
+      <h2>{{message}}</h2>
+      <button v-on:click="RM">逆转消息</button>
+  </div>
+
+
+  <div id = "app-4">
+      <ol>
+          <li v-for="todo in todos">
+              {{todo.text}}
+          </li>
+      </ol>
+  </div>
+  <script src=jsjsjs.js>
+  </script>
+</body>
+</html>
